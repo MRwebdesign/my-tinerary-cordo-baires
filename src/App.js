@@ -1,12 +1,17 @@
 import '../src/index.css'
 import FooterLayout from './layouts/FooterLayout'
-/* import BackToTopText from './components/BackToTopText'; */
-import Carrousel from './components/Carrousel';
+import PagNotFoundLayout from './layouts/PagNotFoundLayout';
+import Header from './layouts/Header'
+import { Route, Routes } from "react-router-dom";
+import Main from './layouts/Main';
 function App() {
   return (
     <>
-    {/* <BackToTopText></BackToTopText> */}
-    <Carrousel></Carrousel>
+    <Header></Header>
+    <Routes>
+      <Route path="*" element={<PagNotFoundLayout/>}/>
+      <Route path="/home" element={<Main/>}/>
+     </Routes>
     <FooterLayout></FooterLayout>
     </>
   );

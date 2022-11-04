@@ -7,6 +7,7 @@ export default function FooterNetworks() {
         <p className='footerSubtittle'>Whatsapp</p>
         <p className='footerSubtittle'>Facebook</p>
         <p className='footerSubtittle'>Instagram</p>
+        <p className='footerSubtittle'>Gmail</p>
     </div>
   )
 }
