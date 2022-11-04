@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import AutoToTop from "./components/AutoToTop";
+import "./index.css";
+import Header from "./layouts/Header";
+import Main from "./layouts/Main";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Header />
+          <AutoToTop/>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          {/* En este caso es "Carrousel" porque no tenemos otra cosa pero deberia ser el layout de Cities, Hotels, etc */}
+          {/* Aca se puede usar la linea de abajo para el error404, esto lleva a una direccion inexistente*/}
+          <Route path="*" element={<Main/>}/>
+        </Routes>                                      
+    </>
   );
 }
 
