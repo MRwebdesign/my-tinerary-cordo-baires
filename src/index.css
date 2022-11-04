@@ -75,22 +75,13 @@
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-=======
 .justify-evenly{
   justify-content: space-evenly;
 }
->>>>>>> cd62e46aacb9692758eacac41a80e28bc4343101
 .justify-around{
   justify-content: space-around;
 }
 
-<<<<<<< HEAD
-.justify-evenly{
-  justify-content: space-evenly;
-}
-=======
->>>>>>> cd62e46aacb9692758eacac41a80e28bc4343101
 /* Text */
 
 .fs-0-5{
@@ -283,11 +274,7 @@
   background-color: lime;
 }
 
-<<<<<<< HEAD
-/* TamaÃ±o Imagenes */
-=======
 /* Tamaño Imagenes */
->>>>>>> cd62e46aacb9692758eacac41a80e28bc4343101
 
 .img-w-1{
   width: 1em;
@@ -1024,8 +1011,6 @@
   flex-grow: 1;
   width: 100%;
   min-height: 100vh;
-<<<<<<< HEAD
-=======
 }
 
 .g-1{
@@ -1048,5 +1033,4 @@
 }
 .g-7{
   gap: 7rem;
->>>>>>> cd62e46aacb9692758eacac41a80e28bc4343101
 }
